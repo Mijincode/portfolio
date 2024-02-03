@@ -1,10 +1,26 @@
-import React from "react";
-import "./Projects.css"; // Your custom CSS file
+import React, { useState } from "react";
+import "../App.css";
 import HappinessApp from "./happinessApp.gif"; // Import your image files
 import Airport from "./Flight.gif";
 import MovieApp from "./movieApp.gif"; // Corrected import name
 
 export default function Projects() {
+  const [showDetails, setShowDetails] = useState(null);
+
+  const handleDetailsClick = (project) => {
+    setShowDetails(project);
+  };
+
+  const projectDetails = {
+    HappinessApp:
+      "React-based web application to allow users to view and analyse ‘happiness survey’ data drawn from a database",
+    FlightInformation:
+      "Web page that allows a user to interact and perform filtering and analysis with aircraft databases. ",
+    MovieApp:
+      "Node.js and express-based API, which allows client-side web applications to retrieve data drawn from an SQL database.",
+    StyleSerenity: "A fashion web application",
+  };
+
   return (
     <>
       <header>
@@ -31,10 +47,16 @@ export default function Projects() {
                 <a
                   href="#"
                   className="btn btn-primary"
-                  onClick={(e) => e.preventDefault()}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleDetailsClick("HappinessApp");
+                  }}
                 >
                   View Details
                 </a>
+                {showDetails === "HappinessApp" && (
+                  <div className="details">{projectDetails.HappinessApp}</div>
+                )}
               </div>
             </div>
           </div>
@@ -50,10 +72,18 @@ export default function Projects() {
                 <a
                   href="#"
                   className="btn btn-primary"
-                  onClick={(e) => e.preventDefault()}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleDetailsClick("FlightInformation");
+                  }}
                 >
                   View Details
                 </a>
+                {showDetails === "FlightInformation" && (
+                  <div className="details">
+                    {projectDetails.FlightInformation}
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -71,10 +101,16 @@ export default function Projects() {
                 <a
                   href="#"
                   className="btn btn-primary"
-                  onClick={(e) => e.preventDefault()}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleDetailsClick("MovieApp");
+                  }}
                 >
                   View Details
                 </a>
+                {showDetails === "MovieApp" && (
+                  <div className="details">{projectDetails.MovieApp}</div>
+                )}
               </div>
             </div>
           </div>
@@ -86,10 +122,16 @@ export default function Projects() {
                 <a
                   href="#"
                   className="btn btn-primary"
-                  onClick={(e) => e.preventDefault()}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleDetailsClick("StyleSerenity");
+                  }}
                 >
                   View Details
                 </a>
+                {showDetails === "StyleSerenity" && (
+                  <div className="details">{projectDetails.StyleSerenity}</div>
+                )}
               </div>
             </div>
           </div>
