@@ -4,48 +4,38 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg bg-light">
-        <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
-            Mijin's Portfolio
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to="/about" activeClassName="active">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  to="/projects"
-                  activeClassName="active"
-                >
-                  Projects
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  className="nav-link"
-                  to="/contact"
-                  activeClassName="active"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
+      <nav className="bg-gray-800">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16">
+            <Link to="/" className="text-white">
+              Mijin's Portfolio
+            </Link>
+            <div className="flex">
+              <Link
+                to="/"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Home
+              </Link>
+              <Link
+                to="/about"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >
+                About
+              </Link>
+              <Link
+                to="/projects"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Projects
+              </Link>
+              <Link
+                to="/contact"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Contact
+              </Link>
+            </div>
           </div>
         </div>
       </nav>

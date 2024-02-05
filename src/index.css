@@ -1,13 +1,51 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+header {
+  display: grid;
+  margin-bottom: 25px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header div {
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 10px;
+}
+
+.project {
+  text-align: center;
+  box-shadow: 0 0 10px 2px #d0d0d0;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.project h4 {
+  margin-top: 0;
+}
+
+.project img {
+  border: 1px solid grey;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
 }

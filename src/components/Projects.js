@@ -1,24 +1,19 @@
 import React, { useState } from "react";
-import "../App.css";
-import HappinessApp from "./happinessApp.gif"; // Import your image files
-import Airport from "./Flight.gif";
-import MovieApp from "./movieApp.gif"; // Corrected import name
+// import HappinessAppImage from "./happinessApp.jpg"; // Import your image files
+import FlightRoutesImage from "./Flight.jpg";
+import MovieAppImage from "./movieApp.jpg"; // Corrected import name
+import StyleSerenityImage from "./StyleSerenity.jpg";
 
 export default function Projects() {
-  const [showDetails, setShowDetails] = useState(null);
+  const [githubUrls] = useState({
+    HappinessApp: "https://github.com/Mijincode/HappinessApp",
+    FlightRoutes: "https://github.com/Mijincode/FlightRoutes",
+    MovieApp: "https://github.com/Mijincode/MovieApp",
+    StyleSerenity: "https://github.com/Mijincode/StyleSerenity",
+  });
 
-  const handleDetailsClick = (project) => {
-    setShowDetails(project);
-  };
-
-  const projectDetails = {
-    HappinessApp:
-      "React-based web application to allow users to view and analyse ‘happiness survey’ data drawn from a database",
-    FlightInformation:
-      "Web page that allows a user to interact and perform filtering and analysis with aircraft databases. ",
-    MovieApp:
-      "Node.js and express-based API, which allows client-side web applications to retrieve data drawn from an SQL database.",
-    StyleSerenity: "A fashion web application",
+  const handleGithubClick = (project) => {
+    window.open(githubUrls[project], "_blank");
   };
 
   return (
@@ -33,110 +28,118 @@ export default function Projects() {
         </div>
         <div>{/* Add your photo or avatar here */}</div>
       </header>
-      <main className="container">
-        <div className="row">
-          <div className="col-md-6">
+      <main className="container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
             <div className="card mb-4">
-              <img
-                src={HappinessApp}
-                alt="A mobile phone with an app open showing the stock price of FB"
-                className="card-img-top"
-              />
+              <div className="aspect-w-16 aspect-h-15">
+                {/* <img src={HappinessAppImage} alt="" className="card-img-top" /> */}
+                <iframe
+                  title="HappinessApp Video"
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/U-Vrown8XYM"
+                  allowFullScreen
+                />
+              </div>
               <div className="card-body">
                 <h4 className="card-title">HappinessApp</h4>
-                <a
-                  href="#"
+                <p>
+                  React-based web application to allow users to view and analyse
+                  ‘happiness survey’ data drawn from a database.
+                </p>
+
+                <button
                   className="btn btn-primary"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleDetailsClick("HappinessApp");
-                  }}
+                  onClick={() => handleGithubClick("HappinessApp")}
                 >
-                  View Details
-                </a>
-                {showDetails === "HappinessApp" && (
-                  <div className="details">{projectDetails.HappinessApp}</div>
-                )}
+                  View GitHub
+                </button>
               </div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div>
             <div className="card mb-4">
-              <img
-                src={Airport}
-                alt="A laptop with the lid open. The screen shows a code editor with a JavaScript file open."
-                className="card-img-top"
-              />
+              <div className="aspect-w-16 aspect-h-15">
+                {/* <img src={FlightRoutesImage} alt="" className="card-img-top" /> */}
+                <iframe
+                  title="Flight Routes and Airports Video"
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/n7On5x0mXxo"
+                  allowFullScreen
+                />
+              </div>
               <div className="card-body">
-                <h4 className="card-title">Flight Information</h4>
-                <a
-                  href="#"
+                <h4 className="card-title">Flight Routes and Airports</h4>
+                <p>
+                  A team project: Web page that allows a user to interact and
+                  perform filtering and analysis with aircraft databases(JSON).
+                </p>
+                <button
                   className="btn btn-primary"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleDetailsClick("FlightInformation");
-                  }}
+                  onClick={() => handleGithubClick("FlightRoutes")}
                 >
-                  View Details
-                </a>
-                {showDetails === "FlightInformation" && (
-                  <div className="details">
-                    {projectDetails.FlightInformation}
-                  </div>
-                )}
+                  View GitHub
+                </button>
               </div>
             </div>
           </div>
-        </div>
-        <div className="row">
-          <div className="col-md-6">
+          <div>
             <div className="card mb-4">
-              <img
-                src={MovieApp}
-                alt="Node.js and Express-based API"
-                className="card-img-top"
-              />
+              <div className="aspect-w-16 aspect-h-9">
+                <iframe
+                  title="Movie Video"
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/kMa4L73EOr8"
+                  allowFullScreen
+                />
+              </div>
               <div className="card-body">
-                <h4 className="card-title">Movie App</h4>
-                <a
-                  href="#"
+                <h4 className="card-title">Movie API</h4>
+                <p>
+                  Node.js and express-based API, which allows client-side web
+                  applications to retrieve data drawn from an SQL database.
+                </p>
+                <button
                   className="btn btn-primary"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleDetailsClick("MovieApp");
-                  }}
+                  onClick={() => handleGithubClick("MovieApp")}
                 >
-                  View Details
-                </a>
-                {showDetails === "MovieApp" && (
-                  <div className="details">{projectDetails.MovieApp}</div>
-                )}
+                  View GitHub
+                </button>
               </div>
             </div>
           </div>
-          <div className="col-md-6">
+          <div>
             <div className="card mb-4">
-              {/* <img src={MovieApp} alt="React" className="card-img-top" /> */}
+              <div className="aspect-w-16 aspect-h-9">
+                {/* <img
+                src={StyleSerenityImage}
+                alt="React"
+                className="card-img-top"
+              /> */}
+                <iframe
+                  title="Style Serenity"
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/n7On5x0mXxo"
+                  allowFullScreen
+                />
+              </div>
               <div className="card-body">
                 <h4 className="card-title">Style Serenity</h4>
-                <a
-                  href="#"
+                <p>
+                  A fashion web application built using JavaScript, HTML, and
+                  CSS which offers a visually appealing and user-friendly
+                  interface for browsing and purchasing fashion items.
+                </p>
+                <button
                   className="btn btn-primary"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleDetailsClick("StyleSerenity");
-                  }}
+                  onClick={() => handleGithubClick("StyleSerenity")}
                 >
-                  View Details
-                </a>
-                {showDetails === "StyleSerenity" && (
-                  <div className="details">{projectDetails.StyleSerenity}</div>
-                )}
+                  View GitHub
+                </button>
               </div>
             </div>
           </div>
         </div>
-        {/* Add more rows with two projects each */}
       </main>
     </>
   );
