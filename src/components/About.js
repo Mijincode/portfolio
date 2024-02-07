@@ -1,5 +1,5 @@
 import React from "react";
-import mijin from "../components/image/mijinPhoto.jpg";
+import mijin from "./image/mijinPhoto.jpg";
 
 export default function About() {
   return (
