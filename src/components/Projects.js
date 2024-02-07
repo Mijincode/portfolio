@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-// import HappinessAppImage from "./happinessApp.jpg"; // Import your image files
-import FlightRoutesImage from "./Flight.jpg";
-import MovieAppImage from "./movieApp.jpg"; // Corrected import name
-import StyleSerenityImage from "./StyleSerenity.jpg";
 
 export default function Projects() {
   const [githubUrls] = useState({
