@@ -22,14 +22,12 @@ export default function Projects() {
             MySQL
           </p>
         </div>
-        <div>{/* Add your photo or avatar here */}</div>
       </header>
       <main className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <div className="card mb-4">
               <div className="aspect-w-16 aspect-h-15">
-                {/* <img src={HappinessAppImage} alt="" className="card-img-top" /> */}
                 <iframe
                   title="HappinessApp Video"
                   className="w-full h-full"
@@ -56,7 +54,6 @@ export default function Projects() {
           <div>
             <div className="card mb-4">
               <div className="aspect-w-16 aspect-h-15">
-                {/* <img src={FlightRoutesImage} alt="" className="card-img-top" /> */}
                 <iframe
                   title="Flight Routes and Airports Video"
                   className="w-full h-full"
@@ -107,15 +104,10 @@ export default function Projects() {
           <div>
             <div className="card mb-4">
               <div className="aspect-w-16 aspect-h-9">
-                {/* <img
-                src={StyleSerenityImage}
-                alt="React"
-                className="card-img-top"
-              /> */}
                 <iframe
                   title="Style Serenity"
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/n7On5x0mXxo"
+                  src="https://www.youtube.com/embed/fN1HkiEuzVA"
                   allowFullScreen
                 />
               </div>

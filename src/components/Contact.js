@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
