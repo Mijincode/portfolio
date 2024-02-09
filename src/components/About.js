@@ -22,9 +22,7 @@ export default function About() {
             Teaching (Primary) from QUT and a robust background in Information
             Technology. Seeking a challenging role that leverages my technical
             proficiency, I am eager to apply my expertise to enhance a dynamic,
-            technology-focused team. Recognized for delivering exceptional
-            technical support, fostering effective collaboration, and adeptly
-            adapting to technological advancements.
+            technology-focused team.
           </p>
           <div>
             <h3 className="text-2xl font-bold mb-4">Education:</h3>
@@ -42,25 +40,6 @@ export default function About() {
           <div>
             <h3 className="text-2xl font-bold mb-4">Skills:</h3>
             <ul className="text-lg leading-relaxed text-black">
-              <li>
-                Proficient in troubleshooting and resolving technical issues
-              </li>
-              <li>Excel in collaborating within a team.</li>
-              <li>
-                Demonstrated ability to organize tasks effectively and
-                prioritize workload
-              </li>
-              <li>
-                Effective communicator with exceptional interpersonal skills
-              </li>
-              <li>Detail-oriented and client-centered</li>
-              <li>
-                Adaptable and flexible in embracing change and new technologies
-              </li>
-              <li>
-                Strong command of HTML and CSS for building responsive and
-                visually appealing web applications
-              </li>
               <li>
                 Proficient in JavaScript for frontend and backend development
               </li>
