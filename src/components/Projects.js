@@ -39,8 +39,8 @@ export default function Projects() {
   };
 
   const ProjectCard = ({ project }) => (
-    <div className="card mb-4">
-      <div className="aspect-w-16 aspect-h-15">
+    <div className="border border-gray-200 rounded-lg p-4">
+      <div className="aspect-w-16 aspect-h-9">
         <iframe
           title={`${project} Video`}
           className="w-full h-full"
@@ -48,11 +48,11 @@ export default function Projects() {
           allowFullScreen
         />
       </div>
-      <div className="card-body">
-        <h4 className="card-title">{projectData[project].title}</h4>
-        <p>{projectData[project].description}</p>
+      <div className="mt-4">
+        <h4 className="text-lg font-semibold">{projectData[project].title}</h4>
+        <p className="text-gray-700">{projectData[project].description}</p>
         <button
-          className="btn btn-primary"
+          className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md"
           onClick={() => handleGithubClick(project)}
         >
           View GitHub
@@ -66,13 +66,13 @@ export default function Projects() {
       <header className="text-center">
         <div>
           <h1 className="text-4xl font-bold">Projects</h1>
-          <p>
+          <p className="text-gray-600">
             HTML, CSS, and JavaScript, React, Node.js and Express-based API,
             MySQL
           </p>
         </div>
       </header>
-      <main className="container mx-auto">
+      <main className="container mx-auto mt-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {Object.keys(projectData).map((project) => (
             <div key={project}>
