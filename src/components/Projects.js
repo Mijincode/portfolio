@@ -14,10 +14,10 @@ export default function Projects() {
 
   return (
     <>
-      <header>
+      <header className="text-center">
         <div>
-          <h1 className="text-center">Projects</h1>
-          <p className="text-center">
+          <h1 className="text-4xl font-bold">Projects</h1>
+          <p>
             HTML, CSS, and JavaScript, React, Node.js and Express-based API,
             MySQL
           </p>
@@ -41,7 +41,6 @@ export default function Projects() {
                   React-based web application to allow users to view and analyse
                   ‘happiness survey’ data drawn from a database.
                 </p>
-
                 <button
                   className="btn btn-primary"
                   onClick={() => handleGithubClick("HappinessApp")}
