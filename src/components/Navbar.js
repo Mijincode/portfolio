@@ -1,27 +1,28 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../index.css";
 
 export default function Navbar() {
   return (
-    <header className="navbar">
-      <nav className="container">
-        <Link to="/" className="brand">
+    <header className="bg-gray-800 h-16 grid" style={{ marginBottom: "25px" }}>
+      <nav className="container mx-auto flex items-center justify-between px-4">
+        <a href="#home" className="text-white text-xl font-bold">
           Mijin's Portfolio
-        </Link>
-        <div className="nav-links">
-          <Link to="/" className="nav-link">
+        </a>
+        <div className="flex text-center">
+          <a href="#home" className="text-white px-3 py-2">
             Home
-          </Link>
-          <Link to="/about" className="nav-link">
+          </a>
+          <a href="#about" className="text-white px-3 py-2">
             About
-          </Link>
-          <Link to="/projects" className="nav-link">
+          </a>
+          <a href="#skills" className="text-white px-3 py-2">
+            Skills
+          </a>
+          <a href="#projects" className="text-white px-3 py-2">
             Projects
-          </Link>
-          <Link to="/contact" className="nav-link">
+          </a>
+          <a href="#contact" className="text-white px-3 py-2">
             Contact
-          </Link>
+          </a>
         </div>
       </nav>
     </header>

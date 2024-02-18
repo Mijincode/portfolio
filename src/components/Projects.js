@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ExternalLinkIcon } from "@heroicons/react/outline";
 
 const projectData = {
   HappinessApp: {
@@ -49,27 +50,26 @@ export default function Projects() {
         />
       </div>
       <div className="mt-4">
-        <h4 className="text-lg font-semibold">{projectData[project].title}</h4>
+        <h4 className="text-lg font-semibold text-center mt-0">
+          {projectData[project].title}
+        </h4>
         <p className="text-gray-700">{projectData[project].description}</p>
         <button
-          className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md"
+          className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md flex items-center justify-center"
           onClick={() => handleGithubClick(project)}
         >
           View GitHub
+          <ExternalLinkIcon className="w-4 h-4 ml-2" />
         </button>
       </div>
     </div>
   );
 
   return (
-    <>
+    <section id="projects">
       <header className="text-center">
         <div>
           <h1 className="text-4xl font-bold">Projects</h1>
-          <p className="text-gray-600">
-            HTML, CSS, and JavaScript, React, Node.js and Express-based API,
-            MySQL
-          </p>
         </div>
       </header>
       <main className="container mx-auto mt-8">
@@ -81,6 +81,6 @@ export default function Projects() {
           ))}
         </div>
       </main>
-    </>
+    </section>
   );
 }

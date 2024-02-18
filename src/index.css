@@ -13,7 +13,7 @@ header {
   padding-left: 0;
   padding-right: 0;
 }
-/* index.css */
+
 .navbar {
   background-color: #2d3748;
   height: 4rem;
@@ -47,7 +47,8 @@ header {
 .navbar .brand {
   color: #fff;
 }
-/* index.css */
+
+/* Home css */
 .home {
   background-color: #f7fafc;
 }
@@ -76,8 +77,8 @@ header {
 }
 
 .home .contact-btn {
-  background-color: rgb(110, 47, 198); /* Original RGB color */
-  background-color: bg-indigo-500; /* Equivalent Tailwind CSS class */
+  background-color: rgb(110, 47, 198);
+  background-color: bg-indigo-500;
   color: #ffffff;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -107,6 +108,46 @@ main {
   gap: 10px;
 }
 
+/* About css */
+.about-container {
+  max-width: 2xl;
+  margin: auto;
+}
+
+.about-image {
+  width: 400px;
+  height: 500px;
+}
+
+.about-text {
+  color: black;
+}
+
+.about-text h2 {
+  font-size: 4xl;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.about-text p {
+  font-size: lg;
+  /* line-height: relaxed; */
+}
+
+.about-education,
+.about-skills {
+  font-size: 2xl;
+  font-weight: bold;
+  margin-bottom: 4px;
+  margin-top: 50px;
+}
+
+.about-list {
+  font-size: lg;
+  line-height: relaxed;
+}
+
+/* Project css */
 .project {
   text-align: center;
   box-shadow: 0 0 10px 2px #d0d0d0;
