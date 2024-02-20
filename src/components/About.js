@@ -1,63 +1,50 @@
 import React from "react";
-import mijin from "./image/mijinPhoto.jpg";
 import "../index.css";
+import { AcademicCapIcon } from "@heroicons/react/outline";
 
 export default function About() {
   return (
     <section id="about" className="">
-      <div className="container mx-auto px-4">
-        <div className="lg:max-w-2xl lg:mx-auto about-container">
-          <div className="flex items-center justify-center mb-8">
-            <img
-              src={mijin}
-              alt="Mijin Lee"
-              className="rounded-full h-40 w-40 object-cover about-image"
-            />
-          </div>
-          <div className="about-text">
+      <div className="container px-5 py-10 mx-auto">
+        <div className="mx-auto about-container">
+          <div className="text-4xl font-bold text-center mb-8">
             <h2>About Me</h2>
-            <p>
-              Hi, I'm Mijin Lee. A dedicated professional currently pursuing a
-              Graduate Certificate in Information Technology (Web Development),
-              I bring a strong foundation in this field, complemented by a
-              Master of Teaching (Primary) from QUT and a robust background in
-              Information Technology. Seeking a challenging role that leverages
-              my technical proficiency, I am eager to apply my expertise to
-              enhance a dynamic, technology-focused team.
-            </p>
           </div>
-          <div>
-            <h3 className="about-education">Education:</h3>
-            <ul className="about-list list-disc">
-              <li>
-                Graduate Certificate in Information Technology (Web Development)
-                - Queensland University of Technology (QUT) | 2023 - 2024
-              </li>
-              <li>
-                Master of Teaching (Primary) - Queensland University of
-                Technology (QUT) | 2018 - 2021
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="about-skills">Skills:</h3>
-            <ul className="about-list list-disc">
-              <li>
-                Proficient in JavaScript for frontend and backend development
-              </li>
-              <li>Experienced in using Node.js for server-side development</li>
-              <li>Skilled in React for building dynamic user interfaces</li>
-              <li>Proficient in MySQL for database management</li>
-              <li>
-                Demonstrated expertise in utilizing Express to develop robust
-                web applications and APIs
-              </li>
-              <li>
-                Knowledgeable in integrating various technologies to develop
-                scalable and efficient web solutions
-              </li>
-            </ul>
-          </div>
+          <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-center">
+            I am currently pursuing a Graduate Certificate in Information
+            Technology (Web Development) and have completed a Master of Teaching
+            (Primary), both from QUT My journey in education sparked a strong
+            interest in the integration of technology and education, leading me
+            to further my studies in Information Technology. This transition has
+            not only equipped me with the skills to expand and develop my IT
+            knowledge but has also deepened my passion for coding and gaining a
+            comprehensive understanding of technology. I thrive on learning new
+            frameworks and libraries, which fuels my enthusiasm for exploring
+            innovative solutions and advancing my professional growth. I am now
+            seeking a challenging role that leverages my technical proficiency,
+            where I can contribute to innovative solutions effectively.
+          </p>
+        </div>
+        <div className="container px-5 py-5">
+          <h3 className="text-2xl text-center font-bold mb-4 mt-5">
+            Education:
+          </h3>
+          <ul className="lg:w-2/3 mx-auto leading-relaxed text-base">
+            <li>
+              <AcademicCapIcon className="inline-block w-5 h-5 mr-2 text-green-500" />
+              Graduate Certificate in Information Technology (Web Development) -
+              (QUT) | 2023 - 2024
+            </li>
+            <li>
+              <AcademicCapIcon className="inline-block w-5 h-5 mr-2 text-green-500" />
+              Master of Teaching (Primary) - (QUT) | 2018 - 2021
+            </li>
+            <li>
+              <AcademicCapIcon className="inline-block w-5 h-5 mr-2 text-green-500" />
+              Certificate IV in Adult Tertiary Preparation - (TAFE) | 2016 -
+              2017
+            </li>
+          </ul>
         </div>
       </div>
     </section>

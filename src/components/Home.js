@@ -14,7 +14,7 @@ export default function Home() {
               className="rounded-full h-80 w-80 object-cover mb-4"
             />
             <p className="text-lg text-center text-700 p-4 rounded-lg shadow-md">
-              I'm Mijin Lee, a passionate full-stack developer.
+              I'm Mijin, a passionate full-stack developer
             </p>
           </div>
         </div>

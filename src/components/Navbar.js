@@ -3,7 +3,7 @@ import React from "react";
 export default function Navbar() {
   return (
     <header className="bg-gray-800 h-16 grid" style={{ marginBottom: "25px" }}>
-      <nav className="container mx-auto flex items-center justify-between px-4">
+      <nav className="container mx-auto flex items-center justify-between">
         <a href="#home" className="text-white text-xl font-bold">
           Mijin's Portfolio
         </a>
