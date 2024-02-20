@@ -1,5 +1,5 @@
 import React from "react";
-import { AcademicCapIcon, CheckIcon } from "@heroicons/react/outline";
+import { CheckIcon } from "@heroicons/react/outline";
 
 const skillsData = [
   "HTML",
