@@ -20,9 +20,7 @@ export default function About() {
             knowledge but has also deepened my passion for coding and gaining a
             comprehensive understanding of technology. I thrive on learning new
             frameworks and libraries, which fuels my enthusiasm for exploring
-            innovative solutions and advancing my professional growth. I am now
-            seeking a challenging role that leverages my technical proficiency,
-            where I can contribute to innovative solutions effectively.
+            innovative solutions and advancing my professional growth.
           </p>
         </div>
         <div className="container px-5 py-5">
