@@ -19,8 +19,8 @@ export default function About() {
             not only equipped me with the skills to expand and develop my IT
             knowledge but has also deepened my passion for coding and gaining a
             comprehensive understanding of technology. I thrive on learning new
-            frameworks and libraries, which fuels my enthusiasm for exploring
-            innovative solutions and advancing my professional growth.
+            technologies, which fuels my enthusiasm for exploring innovative
+            solutions and advancing my professional growth.
           </p>
         </div>
         <div className="container px-5 py-5">

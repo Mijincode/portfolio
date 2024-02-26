@@ -9,6 +9,7 @@ const skillsData = [
   "Node.js",
   "Express",
   "MySQL",
+  "Knex.js",
 ];
 
 export default function Skills() {
