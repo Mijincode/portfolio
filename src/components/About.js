@@ -52,11 +52,6 @@ export default function About() {
               <AcademicCapIcon className="inline-block w-5 h-5 mr-2 text-green-500" />
               Master of Teaching (Primary) - (QUT) | 2018 - 2021
             </li>
-            <li>
-              <AcademicCapIcon className="inline-block w-5 h-5 mr-2 text-green-500" />
-              Certificate IV in Adult Tertiary Preparation - (TAFE) | 2016 -
-              2017
-            </li>
           </ul>
         </div>
       </div>
