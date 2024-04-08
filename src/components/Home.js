@@ -15,7 +15,7 @@ export default function Home() {
             />
             <p className="text-lg text-center text-700 p-4 rounded-lg shadow-md">
               I'm Mijin. Seeking a position where I can contribute my skills to
-              innovative solutions in the field of IT.
+              innovative solutions in web development.
             </p>
           </div>
         </div>

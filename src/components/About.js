@@ -13,14 +13,29 @@ export default function About() {
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-center">
             I am currently pursuing a Graduate Certificate in Information
             Technology (Web Development) and have completed a Master of Teaching
-            (Primary), both from QUT My journey in education sparked a strong
-            interest in the integration of technology and education, leading me
-            to further my studies in Information Technology. This transition has
-            not only equipped me with the skills to expand and develop my IT
-            knowledge but has also deepened my passion for coding and gaining a
-            comprehensive understanding of technology. I thrive on learning new
-            technologies, which fuels my enthusiasm for exploring innovative
-            solutions and advancing my professional growth.
+            (Primary), both from QUT. <br />
+            <br /> Throughout my career, I've been deeply passionate about both
+            education and technology. My journey into IT began during my high
+            school years, where I developed a strong foundation in technology by
+            mastering software such as Microsoft Word and Excel, and even
+            delving into basic coding. This early exposure sparked my
+            fascination with IT, prompting me to continue learning and exploring
+            new technologies While I initially pursued a career in teaching to
+            make a positive impact in students' lives, my passion for technology
+            remained strong. <br />
+            <br />
+            As a student teacher, I observed that integrating technology into
+            the classroom had a significant positive impact. This experience
+            motivated me to study more deeply into technologies by experimenting
+            with coding and exploring various software applications outside of
+            the classroom.
+            <br />
+            <br />
+            Now, with a solid understanding of technology fundamentals and
+            valuable skills gained from teaching, I'm eager to transition into a
+            role where I can leverage my coding skills and enthusiasm to further
+            advance my growth and development in the field of software
+            development.
           </p>
         </div>
         <div className="container px-5 py-5">
