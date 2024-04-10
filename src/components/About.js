@@ -14,7 +14,7 @@ export default function About() {
             I am currently pursuing a Graduate Certificate in Information
             Technology (Web Development) and have completed a Master of Teaching
             (Primary), both from QUT. <br />
-            <br /> Throughout my career, I've been deeply passionate about both
+            <br /> Throughout my journey, I've been deeply passionate about both
             education and technology. My journey into IT began during my high
             school years, where I developed a strong foundation in technology by
             mastering software such as Microsoft Word and Excel, and even
