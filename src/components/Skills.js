@@ -18,16 +18,19 @@ export default function Skills() {
     <section id="skills">
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center mb-20">
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4">
+          <h2 className="text-4xl font-bold text-center mb-8">
             Skills &amp; Technologies
-          </h1>
+          </h2>
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
           {skillsData.map((skill) => (
             <div key={skill} className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+              <div
+                className="rounded flex p-4 h-full items-center"
+                style={{ background: "#e7d8c9" }}
+              >
                 <CheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mr-4" />
-                <span className="title-font font-medium text-white">
+                <span className="title-font font-medium text-black">
                   {skill}
                 </span>
               </div>
