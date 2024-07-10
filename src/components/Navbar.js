@@ -1,29 +1,45 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import "./styles.css";
 
-export default function Navbar() {
+export default function HomeNavbar() {
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="bg-gray-800 h-16 grid" style={{ marginBottom: "25px" }}>
-      <nav className="container mx-auto flex items-center justify-between">
-        <a href="#home" className="text-white text-xl font-bold">
+    <header className={` ${scroll ? "sticky" : ""}`}>
+      <nav className="container mx-auto">
+        <a href="#home" className="navbar-brand">
           Mijin's Portfolio
         </a>
-        <div className="flex text-center">
-          <a href="#home" className="text-white px-3 py-2">
-            Home
-          </a>
-          <a href="#about" className="text-white px-3 py-2">
-            About
-          </a>
-          <a href="#skills" className="text-white px-3 py-2">
-            Skills
-          </a>
-          <a href="#projects" className="text-white px-3 py-2">
-            Projects
-          </a>
-          <a href="#contact" className="text-white px-3 py-2">
-            Contact
-          </a>
-        </div>
+
+        <a href="#home" className="nav-link">
+          Home
+        </a>
+        <a href="#about" className="nav-link">
+          About
+        </a>
+        <a href="#skills" className="nav-link">
+          Skills
+        </a>
+        <a href="#projects" className="nav-link">
+          Projects
+        </a>
+        <a href="#contact" className="nav-link">
+          Contact
+        </a>
       </nav>
     </header>
   );
