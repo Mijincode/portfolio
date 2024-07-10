@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import StudyPlan from "./videos/studyPlan.mp4";
 
 const projects = {
   HappinessApp: {
@@ -29,6 +30,13 @@ const projects = {
     description:
       "A fashion web application built using JavaScript, HTML, and CSS which offers a visually appealing and user-friendly interface for browsing and purchasing fashion items.",
     githubUrl: "https://github.com/Mijincode/StyleSerenity",
+  },
+  StudyPlan: {
+    title: "Study Plan",
+    videoSrc: "https://youtube.com/embed/uyfyD-qJjLU",
+    description:
+      "A Learning Management System designed for students to plan their learning. It integrates APIs that enable real-time course search, interactive course management, and personalized study plans tailored to user preferences.",
+    githubUrl: "https://github.com/Mijincode/StudyPlanApp",
   },
 };
 
