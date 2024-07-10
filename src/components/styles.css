@@ -1,0 +1,56 @@
+/* styles.css */
+
+/* Navbar Container */
+header {
+  background-color: #e6beae;
+  height: 4rem;
+  margin-bottom: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 150px;
+  margin-top: 50px;
+}
+
+/* Navbar Links */
+.nav-link {
+  color: #ffffff;
+  padding: 3rem;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+/* Sticky Navbar */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  animation: fadeInDown 0.3s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* styles.css */
+
+body {
+  background-color: #eee4e1;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
