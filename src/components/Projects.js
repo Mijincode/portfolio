@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import StudyPlan from "./videos/studyPlan.mp4";
 
 const projects = {
   HappinessApp: {
