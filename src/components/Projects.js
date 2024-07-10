@@ -1,6 +1,5 @@
 import React from "react";
-import { ExternalLinkIcon } from "@heroicons/react/outline";
-import { AiFillGithub } from "react-icons/ai";
+import ProjectCard from "./ProjectCard";
 
 const projects = {
   HappinessApp: {
@@ -33,53 +32,19 @@ const projects = {
   },
 };
 
-export default function Projects() {
-  const handleGithubClick = (githubUrl) => {
-    window.open(githubUrl, "_blank");
-  };
-
-  const ProjectCard = ({ project }) => (
-    <div className="border border-gray-200 rounded-lg p-4 flex flex-col items-center justify-center">
-      <div className="aspect-w-16 aspect-h-9">
-        <iframe
-          title={`${project} Video`}
-          className="w-full h-full object-cover"
-          src={projects[project].videoSrc}
-        />
-      </div>
-      <div className="mt-4 flex flex-col items-center">
-        <h4 className="text-lg font-semibold text-center mt-30">
-          {projects[project].title}
-        </h4>
-        <button
-          className="flex items-center bg-blue-500 text-white rounded-md px-4 py-2"
-          onClick={() => handleGithubClick(projects[project].githubUrl)}
-        >
-          <AiFillGithub className="w-4 h-4 mr-2" />
-          <ExternalLinkIcon className="w-4 h-4 ml-2" />
-        </button>
-        {/* </div> */}
-      </div>
-      <p className="text-gray-700">{projects[project].description}</p>
-    </div>
-  );
-
+const Projects = () => {
   return (
     <section id="projects">
-      <header className="text-center">
-        <div>
-          <h1 className="text-4xl font-bold">Projects</h1>
-        </div>
-      </header>
-      <main className="container mx-auto mt-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-20">
-          {Object.keys(projects).map((project) => (
-            <div key={project}>
-              <ProjectCard project={project} />
-            </div>
+      <div className="container px-5 py-10 mx-auto">
+        <h2 className="text-4xl font-bold text-center mb-8">Projects</h2>
+        <div className="grid md:grid-cols-2 gap-20">
+          {Object.keys(projects).map((projectKey) => (
+            <ProjectCard key={projectKey} project={projects[projectKey]} />
           ))}
         </div>
-      </main>
+      </div>
     </section>
   );
-}
+};
+
+export default Projects;
