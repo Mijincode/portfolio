@@ -4,7 +4,7 @@ import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 export default function Contact() {
   return (
     <div className="mt-10">
-      <div id="contact" className="bg-gray-100 p-20 py-20">
+      <div id="contact" className=" p-20 py-20">
         <div className="container mx-auto flex flex-col items-center justify-center">
           <h1 className="text-3xl font-bold mb-8 text-gray-800">Contact me</h1>
           <div className="max-w-md mx-auto flex flex-wrap justify-center">
