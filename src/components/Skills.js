@@ -18,7 +18,7 @@ export default function Skills() {
     <section id="skills">
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center mb-20">
-          <h2 className="text-4xl font-bold text-center mb-8">
+          <h2 className="text-4xl font-bold text-center mb-8 mt-8">
             Skills &amp; Technologies
           </h2>
         </div>

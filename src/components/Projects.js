@@ -43,7 +43,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="container px-5 py-10 mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-8">Projects</h2>
+        <h2 className="text-4xl font-bold text-center mb-8  mt-10">Projects</h2>
         <div className="grid md:grid-cols-2 gap-20">
           {Object.keys(projects).map((projectKey) => (
             <ProjectCard key={projectKey} project={projects[projectKey]} />

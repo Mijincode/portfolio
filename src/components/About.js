@@ -5,11 +5,10 @@ import { AcademicCapIcon } from "@heroicons/react/outline";
 
 export default function About() {
   return (
-    <section id="about" className="bg-B2967D py-10">
-      <div className="container px-5 mx-auto">
-        <div className="text-4xl font-bold text-center mb-8">
-          <h2>About Me</h2>
-        </div>
+    <section id="about" className="bg-B2967D">
+      <div className="container px-5 py-10 mx-auto">
+        <h2 className="text-4xl font-bold text-center mb-8 mt-10">About Me</h2>
+
         <div className="max-w-3xl mx-auto">
           <Card className="mb-4">
             <Card.Body>
