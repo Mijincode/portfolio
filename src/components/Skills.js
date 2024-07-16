@@ -2,8 +2,8 @@ import React from "react";
 import { CheckIcon } from "@heroicons/react/outline";
 
 const skillsData = [
-  "HTML",
-  "CSS",
+  "HTML5",
+  "CSS3",
   "Tailwind CSS",
   "JavaScript",
   "React",
