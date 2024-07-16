@@ -31,7 +31,7 @@ const projects = {
     githubUrl: "https://github.com/Mijincode/StyleSerenity",
   },
   StudyPlan: {
-    title: "Study Plan",
+    title: "Learning Management System - Study Plan App",
     videoSrc: "https://youtube.com/embed/uyfyD-qJjLU",
     description:
       "A Learning Management System designed for students to plan their learning. It integrates APIs that enable real-time course search, interactive course management, and personalized study plans tailored to user preferences.",
