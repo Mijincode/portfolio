@@ -44,7 +44,7 @@ const projects = {
     videoSrc: "https://youtube.com/embed/RF6Afvejid0",
     webPage: "https://chaeul-mi.com/",
     description:
-      "This is a beauty tattoo web application for my client to enhance customer engagement and operational efficiency. Implemented a booking feature using Node.js and Express, allowing clients to select service dates and receive automated confirmation texts via Twilio. Integrated Google Maps API for easy navigation to the shop and utilized React for a responsive user experience across devices. Added internationalization (i18n) for multi-language support, improving accessibility for diverse clientele. Conducted thorough testing and debugging to ensure optimal functionality.",
+      "This is a beauty tattoo web application for my client in South Korea to enhance customer engagement and operational efficiency. Implemented a booking feature using Node.js and Express, allowing clients to select service dates and receive automated confirmation texts via Twilio. Integrated Google Maps API for easy navigation to the shop and utilized React for a responsive user experience across devices. Added internationalization (i18n) for multi-language support, improving accessibility for diverse clientele.",
     githubUrl: "https://github.com/Mijincode/StudyPlanApp",
   },
 };
