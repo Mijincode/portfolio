@@ -7,6 +7,10 @@ const ProjectCard = ({ project }) => {
     window.open(githubUrl, "_blank");
   };
 
+  const handleWebpageClick = (webPage) => {
+    window.open(webPage, "_blank");
+  };
+
   return (
     <Card className="border border-gray-200 rounded-lg">
       <Card.Body className="d-flex flex-column justify-content-between">
@@ -24,14 +28,25 @@ const ProjectCard = ({ project }) => {
             allowFullScreen
           />
         </div>
-        <Button
-          variant="primary"
-          className="d-flex align-items-center"
-          onClick={() => handleGithubClick(project.githubUrl)}
-        >
-          <AiFillGithub className="w-4 h-4 mr-2" />
-          View GitHub
-        </Button>
+        <div className="mt-3 d-flex justify-content-start">
+          <Button
+            variant="primary"
+            className="d-flex align-items-center me-0"
+            onClick={() => handleGithubClick(project.githubUrl)}
+          >
+            <AiFillGithub className="w-4 h-4 mr-2" />
+            View GitHub
+          </Button>
+          {project.webPage && (
+            <Button
+              variant="primary"
+              className="d-flex align-items-center ms-1"
+              onClick={() => handleWebpageClick(project.webPage)}
+            >
+              Visit Website
+            </Button>
+          )}
+        </div>
         <Card.Text className="text-gray-700 mt-2">
           {project.description}
         </Card.Text>
