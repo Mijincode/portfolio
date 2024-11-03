@@ -1,6 +1,5 @@
 import React from "react";
 import "../index.css";
-import { Card } from "react-bootstrap";
 import { AcademicCapIcon } from "@heroicons/react/outline";
 
 export default function About() {
