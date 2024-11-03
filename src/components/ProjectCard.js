@@ -14,12 +14,14 @@ const ProjectCard = ({ project }) => {
           {project.title}
         </Card.Title>
 
-        <div>
+        <div className="ifram-container">
           <iframe
             title={`${project} Video`}
             src={project.videoSrc}
             width="100%"
             height={"400"}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
           />
         </div>
         <Button

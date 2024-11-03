@@ -7,6 +7,9 @@ header {
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-wrap: wrap;
 }
 
 /* Navbar Brand */
@@ -15,16 +18,20 @@ header {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  margin-right: 150px;
-  margin-top: 50px;
 }
 
 /* Navbar Links */
 .nav-link {
   color: #ffffff;
-  padding: 3rem;
+  padding: 0 3rem;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 1.5rem;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 /* Sticky Navbar */
@@ -45,6 +52,52 @@ header {
     transform: translateY(0);
   }
 }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .sticky {
+    position: static;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* .navbar-brand {
+    margin-top: 0;
+    margin-bottom: 10px;
+  } */
+
+  .nav-link {
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 /* styles.css */
 
 body {
@@ -52,4 +105,83 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.ContactForm {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formRow {
+  margin-bottom: 15px;
+}
+
+.formInput {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.formInput.is-invalid {
+  border-color: #dc3545;
+}
+
+.errorMessage {
+  color: #dc3545;
+  font-size: 12px;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.submit-btn:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.alert {
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.alert-dismissible {
+  position: relative;
+}
+
+.btn-close {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 0.5rem 1rem;
 }
