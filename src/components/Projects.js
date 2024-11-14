@@ -6,7 +6,7 @@ const projects = {
     title: "Happiness Ranking",
     videoSrc: "https://www.youtube.com/embed/U-Vrown8XYM",
     description:
-      "A React-based web application for analyzing happiness survey data, enabling users to filter and visualize information across demographics. Integrated with a backend database for real-time data access, implemented responsive design for mobile compatibility, and utilized RESTful API calls and data visualization libraries to enhance user experience.,",
+      "A React-based web application for analyzing happiness survey data, enabling users to filter and visualize information across demographics. Integrated with a backend database for real-time data access, and utilized RESTful API calls and data visualization libraries to enhance user experience.",
     githubUrl: "https://github.com/Mijincode/HappinessApp",
   },
   FlightRoutes: {
@@ -20,7 +20,7 @@ const projects = {
     title: "Movie Search",
     videoSrc: "https://www.youtube.com/embed/kMa4L73EOr8",
     description:
-      "The Movie Database API is a web application that allows users to register, log in, search for movies by title and year, and manage movie posters. It features secure user authentication with JWT, retrieves movie details using IMDb IDs, and supports file uploads for movie posters. Built with HTML, CSS, and JavaScript for the frontend, and Node.js, Express.js, SQLite, and Multer for the backend.",
+      "The Movie Database API is a web application that allows users to register, log in, search for movies by title and year, and manage movie posters. It features secure user authentication with JWT, retrieves movie details using IMDb IDs, and supports file uploads for movie posters. Built with HTML, CSS, and JavaScript for the frontend, and Node.js, Express.js, MySQL, and Multer for the backend.",
 
     githubUrl: "https://github.com/Mijincode/MovieApp",
   },
