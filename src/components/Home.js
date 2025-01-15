@@ -15,7 +15,7 @@ export default function Home() {
             className="rounded-full h-80 w-80 object-cover mb-4"
           />
           <p className="text-lg text-center text-700 p-4 rounded-lg shadow-md">
-            Hi, I’m Mijin, a junior full-stack web developer passionate about
+            I’m Mijin, a junior full-stack web developer passionate about
             creating dynamic, user-friendly web applications. I thrive on
             learning new technologies and bringing ideas to life through code,
             whether it’s front-end design or back-end functionality. Eager to
