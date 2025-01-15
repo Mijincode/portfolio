@@ -11,12 +11,12 @@ export default function About() {
         <div className="max-w-3xl mx-auto text-base leading-relaxed">
           <p>
             <strong className="text-xl">From classrooms to code,</strong> my
-            journey has been one driven by curiosity and a deep appreciation for
-            the transformative power of technology. Holding a Graduate
-            Certificate in Information Technology (Web Development), I'm now
-            making an exciting leap from education to the tech industry—a move
-            inspired by the limitless potential technology offers to reshape how
-            we live, work, and learn.
+            journey has been driven by curiosity and a deep appreciation for the
+            transformative power of technology. Holding a Graduate Certificate
+            in Information Technology (Web Development), I'm now making an
+            exciting leap from education to the tech industry—a move inspired by
+            the limitless potential technology offers to reshape how we live,
+            work, and learn.
           </p>
           <p className="mt-4">
             It all started in high school, where I first delved into programs
@@ -28,12 +28,13 @@ export default function About() {
             my back pocket.
           </p>
           <p className="mt-4">
-            As a student teacher, I saw firsthand the incredible impact of
-            technology in the classroom. Simple digital tools could captivate
-            students, turning traditional lessons into interactive experiences
-            that unlocked new levels of engagement and understanding. This
-            revelation inspired me to dig even deeper into coding and tech
-            tools, experimenting beyond the classroom to expand my skills.
+            Throughout my careers in education, I saw firsthand the incredible
+            impact of technology in the classroom. Simple digital tools could
+            captivate students, turning traditional lessons into interactive
+            experiences that unlocked new levels of engagement and
+            understanding. This revelation inspired me to dig even deeper into
+            coding and tech tools, experimenting beyond the classroom to expand
+            my skills.
           </p>
           <p className="mt-4">
             Now, I'm ready to channel my experience in both education and
