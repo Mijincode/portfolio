@@ -15,12 +15,15 @@ export default function Home() {
             className="rounded-full h-80 w-80 object-cover mb-4"
           />
           <p className="text-lg text-center text-700 p-4 rounded-lg shadow-md">
-            I’m Mijin, a junior full-stack web developer passionate about
-            creating dynamic, user-friendly web applications. I thrive on
-            learning new technologies and bringing ideas to life through code,
-            whether it’s front-end design or back-end functionality. Eager to
-            make a meaningful impact, I’m excited to dive into challenges and
-            grow as a developer in every project I take on.
+            I'm Mijin, a UI/UX Designer and Full-Stack Developer passionate
+            about crafting visually engaging and user-friendly web experiences.
+            With a strong foundation in design and development, I enjoy bringing
+            ideas to life by focusing on aesthetics, functionality, and seamless
+            user interactions. My experience in building responsive websites and
+            intuitive interfaces allows me to create digital solutions that are
+            both beautiful and efficient. Always eager to learn and grow, I
+            strive to enhance user experiences through thoughtful design and
+            clean, maintainable code.
           </p>
         </div>
       </div>
