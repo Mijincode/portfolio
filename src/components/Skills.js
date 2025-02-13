@@ -7,6 +7,7 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 import { SiTailwindcss, SiExpress, SiMysql } from "react-icons/si";
+import { FaFigma } from "react-icons/fa";
 
 const skillsData = [
   { name: "HTML5", icon: <FaHtml5 className="text-orange-500 w-6 h-6" /> },
@@ -19,6 +20,8 @@ const skillsData = [
     name: "JavaScript",
     icon: <FaJsSquare className="text-yellow-500 w-6 h-6" />,
   },
+  { name: "Figma", icon: <FaFigma className="text-purple-500 w-6 h-6" /> },
+  { name: "Miro", icon: <span className="text-green-500 w-6 h-6">M</span> },
   { name: "React", icon: <FaReact className="text-blue-400 w-6 h-6" /> },
   { name: "Node.js", icon: <FaNodeJs className="text-green-500 w-6 h-6" /> },
   { name: "Express", icon: <SiExpress className="text-gray-500 w-6 h-6" /> },
