@@ -10,7 +10,7 @@ export default function About() {
 
         <div className="max-w-3xl mx-auto text-base leading-relaxed">
           <p>
-            <strong className="text-xl">From classrooms to code,</strong> my
+            {/* <strong className="text-xl">From classrooms to code,</strong> my
             journey has been driven by curiosity and a deep appreciation for the
             transformative power of technology. Holding a Graduate Certificate
             in Information Technology (Web Development), I'm now making an
@@ -42,7 +42,47 @@ export default function About() {
             skills in meaningful ways and explore tech's vast potential. With
             each new project, I’m driven by the belief that technology holds the
             power to solve problems, break boundaries, and create a lasting
-            impact—and I’m thrilled to be part of it.
+            impact—and I’m thrilled to be part of it. */}
+            <p>
+              <strong className="text-xl">From classrooms to code,</strong> my
+              journey has been shaped by curiosity, creativity, and a deep
+              appreciation for the transformative power of technology. Holding a
+              Graduate Certificate in Information Technology (Web Development),
+              I’ve transitioned from education to the tech industry, eager to
+              explore how{" "}
+              <strong>UI/UX design and full-stack development</strong> can
+              reshape digital experiences.
+            </p>
+
+            <p>
+              It all started in high school, where I first dabbled in programs
+              like Microsoft Word and Excel, even experimenting with basic
+              coding. These early interactions sparked a fascination with
+              technology, and although I initially pursued a career in teaching
+              to inspire and uplift students, my passion for technology remained
+              a constant undercurrent.
+            </p>
+
+            <p>
+              Throughout my career in education, I witnessed firsthand how
+              technology could revolutionize learning, making it more
+              interactive and engaging. These experiences fueled my desire to
+              dive deeper into the world of <strong>web development</strong>,
+              where I could create impactful digital solutions.
+            </p>
+
+            <p>
+              Now, I’m blending my experience in both education and technology
+              to{" "}
+              <strong>
+                design and build intuitive, user-friendly web applications
+              </strong>{" "}
+              that make a difference. With each project, I’m driven by the
+              belief that <strong>design and technology together</strong> can
+              solve problems, break boundaries, and create lasting, positive
+              change. I’m excited to contribute my skills to build innovative
+              solutions and be part of this dynamic field.
+            </p>
           </p>
           <h2 className="text-4xl font-bold text-center my-8 mt-16">
             Education:{" "}
