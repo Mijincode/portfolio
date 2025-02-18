@@ -46,42 +46,41 @@ export default function About() {
             <p>
               <strong className="text-xl">From classrooms to code,</strong> my
               journey has been shaped by curiosity, creativity, and a deep
-              appreciation for the transformative power of technology. Holding a
-              Graduate Certificate in Information Technology (Web Development),
-              I’ve transitioned from education to the tech industry, eager to
-              explore how{" "}
-              <strong>UI/UX design and full-stack development</strong> can
-              reshape digital experiences.
+              appreciation for the transformative power of technology. After
+              transitioning from the education sector to the tech industry, I’ve
+              been eager to explore how UI/UX design and full-stack development
+              can reshape digital experiences.
             </p>
 
             <p>
-              It all started in high school, where I first dabbled in programs
-              like Microsoft Word and Excel, even experimenting with basic
-              coding. These early interactions sparked a fascination with
-              technology, and although I initially pursued a career in teaching
-              to inspire and uplift students, my passion for technology remained
-              a constant undercurrent.
+              It all began in high school, when I first experimented with
+              Microsoft Office and explored the basics of coding. These early
+              experiences sparked a fascination with technology, even though I
+              initially pursued a teaching career. While inspiring students in
+              the classroom, my passion for technology quietly grew stronger in
+              the background, eventually guiding me to pursue a Graduate
+              Certificate in Information Technology (Web Development).
             </p>
 
             <p>
-              Throughout my career in education, I witnessed firsthand how
-              technology could revolutionize learning, making it more
-              interactive and engaging. These experiences fueled my desire to
-              dive deeper into the world of <strong>web development</strong>,
-              where I could create impactful digital solutions.
+              As I delved deeper into the field, my passion naturally evolved
+              toward front-end development, UI/UX design, and crafting
+              exceptional user experiences. Now, I am fully immersed in the
+              world of UI/UX design, eager to make a meaningful impact by
+              merging creativity with technology.
             </p>
 
             <p>
-              Now, I’m blending my experience in both education and technology
-              to{" "}
-              <strong>
-                design and build intuitive, user-friendly web applications
-              </strong>{" "}
-              that make a difference. With each project, I’m driven by the
-              belief that <strong>design and technology together</strong> can
-              solve problems, break boundaries, and create lasting, positive
-              change. I’m excited to contribute my skills to build innovative
-              solutions and be part of this dynamic field.
+              In every project, I approach design with creativity and
+              innovation, always striving to build solutions that are both
+              functional and inspiring. I believe that the fusion of thoughtful
+              design and cutting-edge technology can break barriers, solve
+              complex problems, and leave a lasting mark on the digital world.
+              Driven by a passion for pushing the boundaries of what's possible,
+              I continually strive to create designs that prioritize creativity,
+              functionality, and seamless user experience. For me, this journey
+              is not just about coding and design—it's about crafting digital
+              experiences that truly make a difference.
             </p>
           </p>
           <h2 className="text-4xl font-bold text-center my-8 mt-16">
